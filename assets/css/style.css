@@ -1,0 +1,65 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+main {
+    display: block;
+}
+
+.scores {
+    text-decoration: none;
+    color: purple;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.start-up {
+    text-decoration: center;
+    padding: 25px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 15px;
+    font-family: sans-serif;
+}
+
+.descrip {
+    width: 540px;
+    margin: auto;
+    padding: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.startButton {
+    background-color: purple;
+    color: white;
+    border-radius: 5px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+.clearButton {
+    background-color: purple;
+    color: white;
+    border-radius: 5px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.backButton {
+    background-color: purple;
+    color: white;
+    border-radius: 5px;
+    padding: 4px;
+    cursor: pointer;
+}

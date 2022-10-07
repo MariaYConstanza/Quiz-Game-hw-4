@@ -1,27 +1,33 @@
 // variables to keep track of quiz state
-    var currentQuestion
-    var time
-    var timerId
+    var currentQuestion = "";
+    var timer;
+    var timerId;
 
 // variables to reference DOM elements
-var questionsEl = document.getElementById('questions');
-
+var startButton = document.getElementById('startUp');
+var timerId = document.querySelector("timer-sec");
 
 /// FUNCTION TO START THE QUIZ
 function startQuiz() {
   // hide start screen 
-  
+  var startQuiz = document.getElementById('startQuiz');
+  startButton.style.display = "none";
+ 
   // un-hide questions section
-
+  var questionsEl = document.getElementById('questions');
+  questionsEl.style.display = "none";
   // start timer
-
+timerCount = 60;
   // show starting time
 
   getQuestion();
+  clockTick();
 }
 
 /// FUNCTION TO GET/SHOW EACH QUESTION ///
 function getQuestion() {
+  function current(){
+  document.getElementById('questions-display').textContent = questions(currentQuestions).title;
   // get current question object from array
 
   // update title with current question
@@ -34,12 +40,13 @@ function getQuestion() {
   
       // display on the page
       
-    // } 
+  } 
+  current();
 }
 
 /// FUNCTION FOR CLICKING A QUESTION ///
 function questionClick(event) {
-
+var options = document.getElementById('options');
   // if the clicked element is not a choice button, do nothing.
   if (something) {
 
@@ -79,13 +86,20 @@ function quizEnd() {
 /// FUNCTION FOR UPDATING THE TIME ///
 function clockTick() {
   // update time
-
+timerInterval = setInterval(function() {
+  timerCount--;
+  timerId.textContent = timerCount;
   // check if user ran out of time
+  if (timerCount === 0) {
+    clearInterval(timerInterval);
+  }
+}, 1000);
+  
 }
 
 function saveHighscore() {
   // get value of input box - for initials
-
+ var intialsInput = document.getElementById('intials');
   // make sure value wasn't empty
     // get saved scores from localstorage, or if not any, set to empty array
 
@@ -98,7 +112,10 @@ function saveHighscore() {
 
 /// CLICK EVENTS ///
   // user clicks button to submit initials
-
+  document.querySelector("#intialsInput").addEventListener("click", intials);
   // user clicks button to start quiz
-
+  document.querySelector("#startButton").addEventListener("click", startUp);
   // user clicks on element containing choices
+  document.querySelector("#options").addEventListener("click", options);
+
+  // startButton.addEventListener('click', startQuiz);

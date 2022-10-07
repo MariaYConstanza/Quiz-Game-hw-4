@@ -23,5 +23,10 @@ var questions = [
         title: 'Strings values must be enclosed within _____ when being assigned to variables.',
         choice: ['curly backets', 'square brackets', 'quotes', 'none of the above'],
         answer: 'quotes',
+    },
+    {
+        title: 'A very useful tool used during development and debugging for printing content to the debugger is:',
+        choice: ['Terminal/bash', 'For loops', 'JavaScript', 'Console.log'],
+        answer: 'Console.log',
     }
-]
+];

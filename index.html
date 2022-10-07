@@ -15,21 +15,24 @@
             <a class="scores" href="highscore.html">View High Score</a>
             <span class="timer">
             <span class= "time_text">Time</span>
-            <span class="time_set">number</span>
+            <span class="time_sec">60</span>
             </span>
         </header>
         <!--Quiz questions start up page-->
-        <main>
-            <div class="" id="start-up">
+        <main class="wrapper">
+
+            <div class="start-Quiz" id="start-up">
             <h1 class="title">Coding Quiz Challenge</h1>
-            <p class="para">Quiz description</p>
-            <button class="start">Start</button>
+            <p class="descrip">Try to answer the following code-related questions within the line limit.
+                Keep in mind the incorret answers will penalize your scoreline by ten seconds!
+            </p>
+            <button class="startButton">Start Quiz</button>
             </div>
-            <div class="" id="hidden">
-                <div class="questions" id="">
-                    <!--Javascript questions-->
-                </div>
-                <div class="options" id="">
+            <div id="questions" class="hide">
+                <h2 id="question-display"></h2>
+               <!-- Javascript questions -->
+                
+                <div id="options" class="options">
                 <!--javascript options-->
                 </div>
             </div>
@@ -43,6 +46,7 @@
                 <button id="submit">Submit</button>
             </p>
         </div>
+        <div id="feedback" class="feedback hide"></div>
     </div>
 
     <script src="./assets/js/question.js"></script>
