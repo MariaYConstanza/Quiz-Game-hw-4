@@ -86,7 +86,7 @@ function quizEnd() {
 /// FUNCTION FOR UPDATING THE TIME ///
 function clockTick() {
   // update time
-timerInterval = setInterval(function() {
+  timerInterval = setInterval(function() {
   timerCount--;
   timerId.textContent = timerCount;
   // check if user ran out of time
@@ -99,15 +99,18 @@ timerInterval = setInterval(function() {
 
 function saveHighscore() {
   // get value of input box - for initials
- var intialsInput = document.getElementById('intials');
+  var intialsInput = document.getElementById('intials').value;
+
   // make sure value wasn't empty
-    // get saved scores from localstorage, or if not any, set to empty array
 
-    // format new score object for current user
+  
+  // get saved scores from localstorage, or if not any, set to empty array
+  var savedScores = JSON.parse(localStorage.getItem('savedScores'));
+  // format new score object for current user
 
-    // save to localstorage
+  // save to localstorage
 
-    // redirect to next page
+  // redirect to next page
 }
 
 /// CLICK EVENTS ///
