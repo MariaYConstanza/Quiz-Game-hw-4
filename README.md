@@ -10,7 +10,7 @@ As a developer creating a functional quiz game through Javascript should be stim
 ## Screen Shot
 
 ## Deploy
-https://mariayconstanza.github.io/hw-4/
+https://mariayconstanza.github.io/pop-quiz/
 
 ## Licenses
 N/A
