@@ -8,6 +8,7 @@ As a developer creating a functional quiz game through Javascript should be stim
 - MDN
 
 ## Screen Shot
+![quiz game](https://user-images.githubusercontent.com/112887914/201224454-69a51eb9-25d0-4b1f-a1e6-34ec9842a303.png)
 
 ## Deploy
 https://mariayconstanza.github.io/pop-quiz/
