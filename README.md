@@ -13,4 +13,4 @@ As a developer creating a functional quiz game through Javascript should be stim
 https://mariayconstanza.github.io/pop-quiz/
 
 ## Licenses
-N/A
+Copyright https://github.com/MariaYConstanza/pop-quiz All rights Reserved
